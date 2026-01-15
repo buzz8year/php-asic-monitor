@@ -15,7 +15,7 @@ switch ($_SERVER['HTTP_HOST'] ?? null) {
     default:
         define("APP_MYSQL_HOST", "localhost");
         define("APP_MYSQL_USER", "dashboard");
-        define("APP_MYSQL_PASS", "password398");
+        define("APP_MYSQL_PASS", "password123");
         define("APP_MYSQL_PORT", 3306);
         define("APP_MYSQL_DB", "monitoring");
         define("APP_DEVELOPMENT_VERSION", false);
@@ -25,5 +25,6 @@ switch ($_SERVER['HTTP_HOST'] ?? null) {
 define("APP_URL_PREFIX", \App\Strings::current_url_prefix());
 
 ini_set("display_errors", "on");
-ini_set("date.timezone", "Asia/Irkutsk");
+ini_set("date.timezone", "Europe/Oslo");
+
 error_reporting(E_ALL);
